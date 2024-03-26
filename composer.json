@@ -1,0 +1,20 @@
+{
+    "name": "jack/gr4vy-poc",
+    "description": "gr4vy POC app",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Jack Gleeson",
+            "email": "jgleeson@wikimedia.org"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/gr4vy/gr4vy-php.git"
+        }
+    ],
+    "require": {
+        "gr4vy/gr4vy-php": "*@dev"
+    }
+}
