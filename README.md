@@ -10,4 +10,4 @@ The Gr4vy SDK required a private_key.pem file to work. Checkout the [Official SD
     php -S localhost:8000
 
 ## Gr4vy Forms
-- [Embed Payment Form](http://localhost:8000/embed.php)
+- [Embed Payment Form](/embed.php)

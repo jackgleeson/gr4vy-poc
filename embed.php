@@ -53,7 +53,7 @@ $token = $config->getEmbedToken([
 </head>
 <body>
 
-<form action="/checkout" id="payment-form">
+<form action="/checkout.php" id="payment-form">
     <div class="container"></div>
     <input type="submit"/>
 </form>
