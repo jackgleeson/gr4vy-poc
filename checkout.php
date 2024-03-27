@@ -1,6 +1,7 @@
 <?php
 
 require __DIR__ . '/vendor/autoload.php';
+
 if(!empty($_GET['gr4vy_transaction_id'])) {
     $transactionId = $_GET['gr4vy_transaction_id'];
     $privateKeyLocation = (getenv('GR4VY_KEY_DIR') ?: __DIR__) . "/private_key.pem";
