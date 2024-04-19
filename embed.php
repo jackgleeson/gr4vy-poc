@@ -3,7 +3,7 @@
 require __DIR__ . '/vendor/autoload.php';
 
 $privateKeyLocation = (getenv('GR4VY_KEY_DIR') ?: __DIR__) . "/private_key.pem";
-$config = new Gr4vy\Gr4vyConfig("partners", $privateKeyLocation, true, "sandbox", "wikimedia");
+$config = new Gr4vy\Gr4vyConfig("wikimedia", $privateKeyLocation, true, "sandbox");
 
 $checkoutSession = $config->newCheckoutSession();
 $token = $config->getEmbedToken([
@@ -62,7 +62,7 @@ $token = $config->getEmbedToken([
 
 <script>
     gr4vy.setup({
-        gr4vyId: "partners",
+        gr4vyId: "wikimedia",
         element: ".container",
         form: "#payment-form",
         amount: 200,
