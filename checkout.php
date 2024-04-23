@@ -6,7 +6,7 @@ if(!empty($_GET['gr4vy_transaction_id'])) {
     $transactionId = $_GET['gr4vy_transaction_id'];
     $privateKeyLocation = (getenv('GR4VY_KEY_DIR') ?: __DIR__) . "/private_key.pem";
 
-    $config = new Gr4vy\Gr4vyConfig("partners", $privateKeyLocation, true, "sandbox", "wikimedia");
+    $config = new Gr4vy\Gr4vyConfig("wikimedia", $privateKeyLocation, true, "sandbox");
     $transactionInfo = $config->getTransaction($transactionId);
 
     echo '<pre>';
